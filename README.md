@@ -27,7 +27,7 @@ Font Awesome, and hosted with GitHub pages.
 ## Development
 
 ```
-bundle exec jekyll serve
+bundle exec jekyll serve 
 ```
 
 Then, visit http://127.0.0.1:4000/.
