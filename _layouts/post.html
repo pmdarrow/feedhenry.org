@@ -1,0 +1,9 @@
+---
+layout: blog
+---
+
+<div class="blog-post">
+  <h2 class="blog-post-title"><a href="{{ post.url | relative_url }}">{{ page.title | escape }}</a></h2>
+  <p class="blog-post-meta">{{ page.date | date: "%B %e, %Y" }} by {{ page.author }}</p>
+  <p>{{ content }}</p>
+</div><!-- /.blog-post -->

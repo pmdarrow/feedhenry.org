@@ -1,0 +1,34 @@
+{% assign current = page.url | downcase | split: '/' %}
+
+<nav class="navbar navbar-static-top navbar-dark bg-inverse">
+  <div class="clearfix float-sm-left">
+    <button aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler hidden-sm-up float-xs-right"
+            data-target="#navbarResponsive"
+            data-toggle="collapse"
+            type="button"></button>
+    <a class="navbar-brand" href="{{ "/" | relative_url }}"></a>
+  </div>
+
+  <div class="collapse navbar-toggleable-xs" id="navbarResponsive">
+    <ul class="nav navbar-nav">
+      <li class="nav-item {% if current[1] == 'overview' %}active{% endif %}">
+        <a class="nav-link" href="{{ "/overview/" | relative_url }}">Overview</a>
+      </li>
+      <li class="nav-item {% if current[1] == 'projects' %}active{% endif %}">
+        <a class="nav-link" href="{{ "/projects/" | relative_url }}">Projects</a>
+      </li>
+      <li class="nav-item {% if current[1] == 'docs' %}active{% endif %}">
+        <a class="nav-link" href="{{ "/docs/" | relative_url }}">Documentation</a>
+      </li>
+      <li class="nav-item {% if current[1] == 'community' %}active{% endif %}">
+        <a class="nav-link" href="{{ "/community/" | relative_url }}">Community</a>
+      </li>
+      <li class="nav-item {% if current[1] == 'blog' %}active{% endif %}">
+        <a class="nav-link" href="{{ "/blog/" | relative_url }}">Blog</a>
+      </li>
+    </ul>
+  </div>
+</nav>
