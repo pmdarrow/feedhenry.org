@@ -1,0 +1,54 @@
+<footer class="small">
+  <div class="container">
+    <div class="row">
+      <p id="copyright" class="col-md-7 mb-0">
+        <span>&copy; FeedHenry 2016 • Project sponsored by </span>
+        <a id="redhat" href="http://community.redhat.com/software/"></a>
+      </p>
+      <p class="col-md-5 text-md-right mb-0">
+        <a href="https://www.redhat.com/en/about/privacy-policy">Privacy Policy</a>
+        •
+        <a href="https://github.com/feedhenry/feedhenry.org">Edit site on GitHub</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+<script src="{{ "/assets/js/tocbot.min.js" | relative_url }}"></script>
+
+<script type="text/javascript">
+  /**
+   * Auto start and stop demo video when it's opened and closed
+   */
+  var videoSrc = $('#demoModal iframe').attr('src');
+
+  $('#demoModal').on('shown.bs.modal', function (e) {
+    $('#demoModal iframe').attr('src', videoSrc + '?autoplay=1');
+  });
+
+  $('#demoModal').on('hidden.bs.modal', function (e) {
+    $('#demoModal iframe').attr('src', '');
+  });
+</script>
+
+<script type="text/javascript">
+  /**
+   * Render table of contents for projects page
+   */
+  tocbot.init({
+    tocSelector: '.projects-toc',
+    contentSelector: '.projects-page',
+    listClass: 'toc-list list-unstyled',
+    headingSelector: 'h2',
+    positionFixedSelector: '.toc-list',
+    smoothScrollOptions: {
+      easing: 'easeInOutCubic',
+      offset: 16,
+      speed: 300, // animation duration.
+      updateURL: true
+    },
+  });
+</script>

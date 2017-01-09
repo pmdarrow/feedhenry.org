@@ -1,0 +1,15 @@
+{% assign repos_split = include.repos | split: "," %}
+
+<div class="list-group repos">
+  {% for repo_name in repos_split %}
+  {% assign repo = site.data.feedhenry-repos[repo_name] %}
+    <a href="{{ repo.html_url }}" class="list-group-item list-group-item-action">
+      <div class="metadata float-xs-right">
+        <span class="stars"><i class="fa fa-star" aria-hidden="true"></i> {{ repo.stargazers_count }}</span>
+        <span class="forks"><i class="fa fa-code-fork" aria-hidden="true"></i> {{ repo.forks_count }}</span>
+      </div>
+      <h6 class="list-group-item-heading"><i class="fa fa-github" aria-hidden="true"></i> {{ repo.name }}</h6>
+      <p class="list-group-item-text">{{ repo.description }}</p>
+    </a>
+  {% endfor %}
+</div>

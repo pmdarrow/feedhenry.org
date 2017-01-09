@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="container">
+  <h1 class="page-header display-4">Blog</h1>
+
+  <div class="row">
+    <div class="col-sm-8 blog-main">
+       {{ content }}
+    </div> <!-- /.blog-main -->
+
+    <div class="col-sm-3 offset-sm-1 blog-sidebar">
+      <div class="sidebar-module-inset">
+        <h4>About</h4>
+        <p>Find the latest news for the FeedHenry project here. Subscribe to our <a href="{{ "/feed.xml" | relative_url }}">RSS feed</a>.</p>
+      </div>
+      <div class="sidebar-module">
+        <h4>Archives</h4>
+        <ol class="list-unstyled">
+          {% for post in site.posts %}
+            {% assign currentdate = post.date | date: "%B %Y" %}
+            {% if currentdate != date %}
+              <li class="archive-year">{{ currentdate }}</li>
+              {% assign date = currentdate %}
+            {% endif %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ol>
+      </div>
+      <div class="sidebar-module">
+        <h4>Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li>
+            <a href="https://github.com/feedhenry" class="social">
+              <i class="fa fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/feedhenry" class="social">
+              <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/FeedHenry" class="social">
+              <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCYvKWvC7UoUXyLcb16doD3g" class="social">
+              <i class="fa fa-youtube" aria-hidden="true"></i> YouTube
+            </a>
+          </li>
+        </ol>
+      </div> <!-- /.sidebar-module -->
+    </div> <!-- /.blog-sidebar -->
+  </div> <!-- /.row -->
+
+</div>

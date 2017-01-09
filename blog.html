@@ -1,0 +1,15 @@
+---
+layout: blog
+title: Blog
+permalink: /blog/
+---
+
+{% for post in site.posts %}
+  <div class="blog-post">
+    <h2 class="blog-post-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+    <p class="blog-post-meta">{{ post.date | date: "%B %e, %Y" }} by {{ post.author }}</p>
+    <p>{{ post.excerpt }}</p>
+    <a href="{{ post.url | relative_url }}">Read more ›</a>
+    <hr>
+  </div><!-- /.blog-post -->
+{% endfor %}

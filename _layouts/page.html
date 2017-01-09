@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+<div class="container {{ page.title | downcase | replace:' ','-' }}-page">
+  <h1 class="page-header display-4">{{ page.title | escape }}</h1>
+  {{ content }}
+</div>
