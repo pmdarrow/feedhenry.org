@@ -161,15 +161,25 @@ Find the complete list of modules [here](https://github.com/feedhenry-raincatche
 
 </div>
 
-
-
-
-
 <div class="project-title" markdown="1">
 
 ## Build Farm
 
-Automates the app build process.
+A suite of tools and modules that can be used to automate the process of building mobile applications on Kubernetes/OpenShift using Jenkins.
+
+## Modules
+
+### [Jenkins Templates](https://github.com/aerogear/digger-jenkins)
+
+Preconfigured Jenkins instance with all the required plugins installed that will be used to build mobile applications. Work in progress.
+
+### Installer (Coming Soon)
+
+Ansible scripts that can be used to install/provision the required tools, SDKs and services. Work in progress.
+
+### [Client Libaries](https://github.com/aerogear/digger-java)
+
+Client libaries are provided to manage the build tasks. Initial implementation will include Java and NodeJS. Work in progress.
 
 </div>
 
