@@ -43,12 +43,23 @@ Documentation on getting them running can be seen in the readme sections of both
 
 ## Wiring up your client
 
-steps & code examples to be added
+Configure and initialise your client app by:
+
+* Initialising the sync-client
+* Assigning data-sync handlers in your client code
+
+A simple html client showing how sync would being integrated on client-side can be seen [here][fh-sync-js-example].
 
 
 ## Wiring up your server
 
-steps & code examples to be added
+Configure sync in your server application by:
+
+* Importing the fh-sync library
+* Assign an api sync route that clients can call when syncing data
+* Configure/ connect sync to your data source 
+
+A simple express.js showing fh-sync being integrated on the server-side can be seen [here][fh-sync-example].
 
 
 ## Tips/ Troubleshooting
@@ -62,3 +73,5 @@ links to existing & more indepth sync docs to be linked
 
 [sync-client-template]: https://github.com/feedhenry-templates/sync-cordova-app
 [sync-cloud-template]: https://github.com/feedhenry-templates/sync-cloud
+[fh-sync-js-example]: https://github.com/feedhenry/fh-sync-js/blob/master/example/index.html
+[fh-sync-example]: https://github.com/feedhenry/fh-sync/tree/master/examples/basic-express-example
