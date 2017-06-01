@@ -25,3 +25,6 @@ group :jekyll_plugins do
    gem "jekyll-sitemap", "~> 0.12"
    gem "jemoji", "~> 0.7"
 end
+
+# Added at 2017-06-01 09:37:00 +0100 by dmartin:
+gem "html-proofer", "~> 3.6"
