@@ -18,5 +18,10 @@
         "name": "KeyCloak on OpenShift in 30 mins",
         "description": "Deploying KeyCloak on OpenShift",
         "html_url": "/hero-keycloak/"
+    },
+    "hero-sync": {
+        "name": "Getting Started with Sync",
+        "description": "Configuring a client and server app to use fh-sync",
+        "html_url": "/hero-sync/"
     }
 }
