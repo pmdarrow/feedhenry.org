@@ -930,11 +930,11 @@
         "name": "aerogear-digger",
         "stargazers_count": 3
     },
-    "digkins-node": {
-        "description": "Node.js integration lib",
+    "aerogear-digger-node-client": {
+        "description": "AeroGear Digger Node client and CLI",
         "forks_count": 2,
-        "html_url": "https://github.com/aerogear/digkins-node",
-        "name": "digkins-node",
+        "html_url": "https://github.com/aerogear/aerogear-digger-node-client",
+        "name": "aerogear-digger-node-client",
         "stargazers_count": 0
     },
     "docker": {
