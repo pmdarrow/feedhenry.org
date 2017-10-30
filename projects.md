@@ -174,7 +174,7 @@ A suite of tools and modules that can be used to automate the process of buildin
 
 ### Modules
 
-{% include repos.html repos="aerogear-digger,digger-java" %}
+{% include repos.html repos="aerogear-digger,aerogear-digger-java-client" %}
 
 
 

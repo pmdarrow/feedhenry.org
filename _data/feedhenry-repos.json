@@ -916,11 +916,11 @@
         "name": "digger-build-containers",
         "stargazers_count": 1
     },
-    "digger-java": {
-        "description": "Client libaries are provided to manage the build tasks. Initial implementation will include Java and NodeJS. Work in progress.",
+    "aerogear-digger-java-client": {
+        "description": "Client libraries to manage the build tasks on AeroGear Digger",
         "forks_count": 4,
-        "html_url": "https://github.com/aerogear/digger-java",
-        "name": "digger-java",
+        "html_url": "https://github.com/aerogear/aerogear-digger-java-client",
+        "name": "aerogear-digger-java-client",
         "stargazers_count": 0
     },
     "aerogear-digger": {
